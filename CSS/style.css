@@ -1,0 +1,230 @@
+/* Font specification
+font-family: 'Montserrat', sans-serif;
+font-family: 'Comfortaa', cursive;
+*/
+
+/* Navbar CSS */
+
+.navbar .navbar-nav {
+    float: none;
+    margin: auto;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    display: inline-block;
+    float: none;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.active {
+    border-bottom: 2px solid #7a0072;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #7a0072;
+  -webkit-transition: border-bottom 0.5s; /* Safari */
+  transition: border-bottom 0.5s;
+}
+
+/* Home Page */
+#particles-js {
+    height: auto;
+    background-color: #0c0c0c;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#page1 {
+    position: absolute;
+    margin: auto;
+    display: inline-block;
+    padding-top: 50px;
+    text-align: center;
+    left: 50%;
+}
+
+.titleHome {
+    margin: auto;
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Mr Dafoe', cursive;
+    color: #e5e5e5;
+    margin-bottom: 30px;
+    word-spacing: 35px;
+}
+
+.profile {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 2px solid #7a0072;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: #cecece; /*TODO: Make sure that all of the font sizes of the title class and subtitle class work well together */
+}
+
+.hireBtn {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: #fff;
+    background-color: #7a0072;
+    border: 2px solid #7a0072;
+    width: 250px;
+}
+
+.hireBtn:hover {
+    text-decoration: none;
+    background-color: #42103b;
+    color: #fff;
+    transition: background-color 0.25s;
+}
+
+/* About Page */
+#page2 {
+    margin-top: 0px;
+    background-color: #282828;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.titleAbout {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+}
+
+.aboutPara {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    margin: 25px;
+}
+
+.aboutSubTitle {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.skillList {
+    margin-left: inherit;
+    color: #fff;
+    list-style: circle;
+    font-size: 18px;
+}
+
+/* Portfolio */
+
+#page3 {
+    margin-top: 0px;
+    position: relative;
+    padding-top: 30px;
+    background-color: #0c0c0c;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+/* Contact */
+
+#page4 {
+    background-color: #282828;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    position: relative;
+}
+
+.label {
+    margin: auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+#emailInput, #nameInput {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+    resize: vertical;
+}
+
+#messInput, select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    padding-bottom: 150px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#submit {
+    background-color: #7a0072;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#submit:hover {
+    background-color: #42103b;
+    color: #fff;
+    transition: background-color 0.25s;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #0c0c0c;
+    position: relative;
+    margin: auto;
+    display: inline-block;
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.logo-footer {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+}
