@@ -216,20 +216,19 @@ font-family: 'Comfortaa', cursive;
 /* Footer */
 
 .footer {
-    background-color: #0c0c0c;
-    position: relative;
-    margin: auto;
-    display: inline-block;
+    background-color: #282828;
     padding-top: 50px;
+    padding-bottom: 50px;
     height: auto;
     width: 100%;
 }
 
-.logo-footer {
-    margin: auto;
-    display: block;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-
+.footer a {
+  color: #70726F;
+  font-size: 24px;
+  margin: 10px;
+  transition: all .25s ease;
 }
+
+.footer a:hover {
+  color: white;
