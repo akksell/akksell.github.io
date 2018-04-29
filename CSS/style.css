@@ -146,6 +146,11 @@ font-family: 'Comfortaa', cursive;
     position: relative;
 }
 
+.card {
+    background-color: #282828;
+    color: #fff;
+}
+
 /* Contact */
 
 #page4 {
@@ -226,5 +231,5 @@ font-family: 'Comfortaa', cursive;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    
+
 }
