@@ -11,13 +11,13 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "polygon",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
         "src": "img/github.svg",
@@ -49,7 +49,7 @@
       "enable": true,
       "distance": 150,
       "color": "#e00f7f",
-      "opacity": 0.4,
+      "opacity": 0.7,
       "width": 1
     },
     "move": {
