@@ -36,7 +36,6 @@ font-family: 'Comfortaa', cursive;
 #particles-js {
     height: auto;
     background-color: #0c0c0c;
-    padding-bottom: 50px;
     position: relative;
 }
 
@@ -52,7 +51,7 @@ font-family: 'Comfortaa', cursive;
 .titleHome {
     margin: auto;
     text-align: center;
-    font-size: 120px;
+    font-size: 7.5em;
     font-family: 'Mr Dafoe', cursive;
     color: #e5e5e5;
     margin-bottom: 30px;
@@ -71,7 +70,7 @@ font-family: 'Comfortaa', cursive;
 .subtitle {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #cecece; /*TODO: Make sure that all of the font sizes of the title class and subtitle class work well together */
 }
 
@@ -79,7 +78,7 @@ font-family: 'Comfortaa', cursive;
     display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-top: 150px;
     margin-bottom: 50px;
     color: #fff;
