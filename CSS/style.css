@@ -114,7 +114,7 @@ font-family: 'Comfortaa', cursive;
 
 .aboutPara {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     margin-top: 10px;
     margin: 25px;
@@ -148,6 +148,15 @@ font-family: 'Comfortaa', cursive;
 .card {
     background-color: #282828;
     color: #fff;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
 }
 
 /* Contact */

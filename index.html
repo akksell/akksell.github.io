@@ -16,6 +16,15 @@
         <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118266626-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-118266626-1');
+        </script>
     </head>
     <body>
         <!-- Navbar -->
@@ -36,9 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
               </div>
             </div>
@@ -65,28 +74,27 @@
             <div class="col-lg-12">
                 <h1 class="titleAbout" id="about">About Me</h1>
             </div>
-            <div class="col-lg-4">
-                <h3 class="aboutSubTitle">Personal</h3>
-                <p class="aboutPara">Hi! My name is Axel, or n2va online. I am 16 years old and love anything related to computers. I started playing CS in 2015 and have played the game since. I am currently focusing on my schoolwork and do artwork graphics on the side. I also developed <a href="http://cslightning.io">CSLightning</a> which is an innovative way to learn and develop skills in CS.</p>
+            <div class="col-lg-2">
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-4">
+              <h3 class="aboutSubTitle">Personal</h3>
+              <p class="aboutPara">Hi! My name is Axel, or n2va online. I am 16 years old and love anything related to computers. I started playing CS in 2015 and have played the game since. I am currently focusing on my schoolwork and do artwork graphics on the side. I also developed <a href="http://cslightning.io">CSLightning</a> which is an innovative way to learn and develop skills in CS.</p>
+              <div style="display: inline-block; width: inherit; text-align: center;">
+              <iframe src="https://open.spotify.com/embed/user/inovaplayz/playlist/56OTCCSHlKD4EAb77sSC8h" width="300" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: inherit; margin-top: 10px;"></iframe>
+            </div>
+            </div>
+            <div class="col-lg-4">
                 <h3 class="aboutSubTitle">Graphic Design</h3>
                 <p class="aboutPara">I create logos and Steam profile artwork using Adobe After Effects, Adobe Photoshop, and Adobe Illustrator. I have done so for approximately a year and am continuing to develop my knowledge of Illustrator and logo design.</p>
-                <p class="aboutPara">I have created dozens of steam profile artworks for a variety of clients. A sample of steam profile artwork is visible on the portfolio section of this webpage.</p>
+                <p class="aboutPara">I have created steam profile artwork for a variety of clients. Examples of Steam profile artwork I have created is visible below. I make the artwork in approximately <b>1-2 days</b> depending on the requests of the client and the amount of other work I have.</p>
                 <h3 class="aboutSubTitle">Web Development</h3>
-                <p class="aboutPara">I am also a web developer. I primarily work with front-end web development and can create stunning websites in HTML and CSS. Currently, I am working on learning JS and developing my knowledge of HTML and CSS.</p>
+                <p class="aboutPara">I am also a web developer. I primarily work with front-end web development and can create websites using HTML and CSS. Currently, I am working on learning JS and developing my knowledge of HTML and CSS.</p>
                 <p class="aboutPara">Skills Include:</p>
                 <ul>
-                    <li class="skillList">HTML</li>
-                    <li class="skillList">CSS</li>
-                    <li class="skillList">NodeJS</li>
+                  <li class="skillList">HTML</li>
+                  <li class="skillList">CSS</li>
+                  <li class="skillList">NodeJS</li>
                 </ul>
-            </div>
-            <div class="col-lg-2">
-                <h3 class="aboutSubTitle">Favorite Songs</h3>
-                <div style="margin-left: 10px;">
-                    <iframe src="https://open.spotify.com/embed/user/inovaplayz/playlist/56OTCCSHlKD4EAb77sSC8h" width="300" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: inherit;"></iframe>
-                </div>
             </div>
 
             <!-- TODO: Fix div styling for my favorite songs and make sure fonts/colors match up and make sense -->
@@ -100,21 +108,20 @@
             <div class="col-lg-12">
                 <h1 id="portfolio" class="titleAbout">Portfolio</h1>
             </div>
-
             <div class="container">
                 <div class="card-deck">
-                  <div class="card">
-                    <img class="card-img-top" src="./img/artwork_portfolio/delirium.gif" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Simple</h5>
-                      <p class="card-text">This is a simple design with easy-ease animations that can be customized to the client's will.</p>
-                    </div>
-                  </div>
                   <div class="card">
                     <img class="card-img-top" src="./img/artwork_portfolio/galaxy.gif" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Galaxy</h5>
                       <p class="card-text">This animation is geared towards profiles with space related backgrounds. It includes twinkling stars, shooting stars, and the client's brand or profile name.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./img/artwork_portfolio/delirium.gif" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple</h5>
+                      <p class="card-text">This is a simple design with easy-ease animations that can be customized to the client's will.</p>
                     </div>
                   </div>
                   <div class="card">
@@ -126,6 +133,10 @@
                   </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Testimonial -->
+        <div class="container-fluid">
         </div>
 
         <!-- Contact -->
@@ -214,17 +225,6 @@
                 }
               });
         </script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118266626-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-118266626-1');
-        </script>
-
 
         <script>
             /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
