@@ -32,6 +32,21 @@ font-family: 'Comfortaa', cursive;
   transition: border-bottom 0.5s;
 }
 
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: #606060;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #141414;
+    border-radius: 10px;
+}
+
 /* Home Page */
 #particles-js {
     height: auto;
