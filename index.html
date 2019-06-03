@@ -16,7 +16,10 @@
         <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118266626-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -53,6 +56,21 @@
             </div>
         </nav>
 
+		<!-- Cookies notification pop-up -->
+		<script>
+		$(document).ready(function(){
+			$('#acceptBtn').click(function(){
+				 $('#cookieNotif').hide();
+			 });
+		});
+		//TODO: finish removing cookienotification on click of acceptBtn and add a cookie policy page
+		</script>
+
+	    <div class="cookie-notification" id="cookieNotif">
+	        <p class="abtCookies">This site uses cookies in order to provide an optimal experience for users. By continuing on this site, you understand and agree to the <a href="./cookies.html" style="text-decoration: underline;">cookie policy</a></p>
+	        <a id="acceptBtn" class="acceptBtn" href="#">Accept</a>
+	   </div>
+
         <div class="container-fluid">
         <!-- Home -->
         <div id="particles-js" class="row">
@@ -62,7 +80,7 @@
                     <h1 class="titleHome">n2va</h1>
                     <p class="subtitle">Graphic Designer and Web Developer</p>
                     <!-- <div style="text-align: center;">
-                        <a class="hireBtn" href="./steam">Hire Me</a> TODO: readd this button when ready for hire 
+                        <a class="hireBtn" href="./steam">Hire Me</a> TODO: readd this button when ready for hire
                     </div> -->
                 </div>
             </div>
@@ -78,7 +96,7 @@
             </div>
             <div class="col-lg-4">
               <h3 class="aboutSubTitle">Personal</h3>
-              <p class="aboutPara">Hi! My name is n2va. I am 16 years old and love anything related to computers. I started playing CS in 2015 and have played the game since. I am currently focusing on my schoolwork and do artwork graphics on the side. I also developed <a href="http://cslightning.io">CSLightning</a> which is an innovative way to learn and develop skills in CS.</p>
+              <p class="aboutPara">Hi! My name is n2va. I am 17 years old and love anything related to computers. I started playing CS in 2015 and have played the game since. I am currently focusing on my schoolwork and do artwork graphics on the side. I also developed <a href="http://cslightning.io">CSLightning</a> which is an innovative way to learn and develop skills in CS.</p>
               <div style="display: inline-block; width: inherit; text-align: center;">
               <iframe src="https://open.spotify.com/embed/user/inovaplayz/playlist/63i3HVMPdhFRxqnl02CDo5" width="300" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: inherit; margin-top: 10px;"></iframe>
             </div>
@@ -178,6 +196,7 @@
         <div class="row">
           <footer class="footer">
               <div class="container text-center">
+                  <p style="color: #fff;"><i>All background artworks are owned by their respective owners. I do not claim any ownership of fonts or background artworks used in any animations.</i></p>
                   <p style="color: #fff; ">Made with ❤ by n2va</p>
                   <a href="./steam"><i class="fab fa-steam"></i></a>
                   <a href="./twitch"><i class="fab fa-twitch"></i></a>
@@ -189,13 +208,11 @@
 
         </div> <!-- End of container for Boostrap -->
         <!-- JS References -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
         <script src="./JS/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
         <!-- Smooth transition script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $('a[href*="#"]')
               // Remove links that don't actually link to anything
