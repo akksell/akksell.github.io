@@ -256,6 +256,56 @@ font-family: 'Comfortaa', cursive;
 
 /* Footer */
 
+.cookie-notification {
+  position: fixed;
+  background-color: #444444;
+  z-index: 4;
+  width: 100%;
+  float: left;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+	bottom:0;
+}
+
+/* .cookieTitle {
+  position: relative;
+  display: inline-block;
+  float: left;
+} */
+
+.abtCookies {
+  float: left;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+}
+
+.acceptBtn {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background-color: #7a0072;
+  border: 2px solid #7a0072;
+  font-size: 1.5em;
+  float: right;
+  margin-right: 150px;
+  width: 125px;
+  text-decoration: none;
+  position: relative;
+}
+
+.acceptBtn:hover {
+  text-decoration: none;
+  background-color: #42103b;
+  color: #fff;
+  transition: background-color 0.25s;
+}
+
 .footer {
     background-color: #282828;
     padding-top: 50px;
