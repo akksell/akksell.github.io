@@ -5,19 +5,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>vain - Graphic Designer and Web Developer</title>
-        <link rel="icon" type="image/png" href="./img/profile.png">
+        <title>Axel Ramone - Welcome to my Portfolio</title>
+        <link rel="icon" type="image/png" href="./img/profile.png"> <!-- TODO: add icon -->
 
-        <!-- References -->
-        <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+        <!-- bootstrap CSS reference -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha256-YvdLHPgkqJ8DVUxjjnGVlMMJtNimJ6dYkowFFvp4kKs=" crossorigin="anonymous">
+        <!-- fontawesome reference -->
+        <script src="https://kit.fontawesome.com/b2b606ab07.js" crossorigin="anonymous"></script>
+        <!-- Jquery reference -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-		<!-- Jquery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- local css references -->
+        <link rel="stylesheet" href="./CSS/style.css">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118266626-1"></script>
@@ -30,232 +29,82 @@
         </script>
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #282828">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbarSupportedContent">
-                  <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#particles">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li> -->
-                </ul>
-              </div>
+        <!-- Main Content -->
+        <div class="container h-100 w-100 anim">
+            <!-- header -->
+            <div class="row h-25 align-items-end">
+                <div class="col-md-6" style="text-align: center;">
+                    <h1 class="main-header">HI, I'M AXEL</h1>
+                </div>
             </div>
-        </nav>
 
-		<!-- Cookies notification pop-up -->
-		<script>
-		$(document).ready(function(){
-			$('#acceptBtn').click(function(){
-				 $('#cookieNotif').hide();
-			 });
-		});
-		//TODO: finish removing cookienotification on click of acceptBtn and add a cookie policy page
-		</script>
+            <!-- content -->
+            <div class="row h-50 w-100 justify-content-center align-items-center">
+                <!-- header -->
+                <div class="col-md-6" style="text-align: center;">
+                    <div class="navlist">
+                        <ul>
+                            <li><a href="#" id="about-btn">About Me</a></li>
+                            <li><a href="#" id="exp-btn">Experience</a></li>
+                            <li><a href="#" id="proj-btn">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-	    <div class="cookie-notification" id="cookieNotif">
-	        <p class="abtCookies">This site uses cookies in order to provide an optimal experience for users. By continuing on this site, you understand and agree to the <a href="./cookies.html" style="text-decoration: underline;">cookie policy</a></p>
-	        <a id="acceptBtn" class="acceptBtn" href="#">Accept</a>
-	   </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="console">
+                        <!-- console menu -->
+                        <div class="c-menu">
+                            <div class="c-win-title">
+                                <p id="console-title">Welcome to my page!</p>
+                            </div>
+                            <div class="c-minimize d-flex justify-content-center align-items-center">
+                                <div class="dash"></div>
+                            </div>
+                            <div class="c-quit">
+                                <p class="exit">X</p>
+                            </div>
+                        </div>
 
-        <div class="container-fluid">
-        <!-- Home -->
-        <div id="particles-js" class="row">
-            <div id="page1" class="col-lg-12">
-                <div class="col-lg-12" style="position: relative;">
-                    <img src="./img/profile.png" class="profile">
-                    <h1 class="titleHome">vain</h1>
-                    <p class="subtitle">Graphic Designer and Web Developer</p>
-                    <!-- <div style="text-align: center;">
-                        <a class="hireBtn" href="./steam">Hire Me</a> TODO: readd this button when ready for hire
-                    </div> -->
+                        <!-- body of console -->
+                        <div class="c-body">
+                            <div class="c-body-text-container">
+                                <p class="c-body-text" id="console-text">C:\Users\Default\Portfolio\</p>
+                                <div class="blinker align-self-end"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="row w-100 h-25 align-items-end">
+                <div class="col w-100 d-flex justify-content-center">
+                    <div class="footer">
+                        <ul>
+                            <li><a href="https://github.com/GetOFFMyLAN/"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                            <li><a href="https://twitter.com/atramone"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- About -->
-
-        <div id="page2" class="row">
-            <div class="col-lg-12">
-                <h1 class="titleAbout" id="about">About Me</h1>
-            </div>
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-4">
-              <h3 class="aboutSubTitle">Personal</h3>
-              <p class="aboutPara">Hi! My name is vain. I am 18 years old and love anything related to computers. I started playing CS in 2015 and have played the game since. I am currently focusing on my schoolwork and do artwork graphics on the side. I also developed <a href="http://cslightning.io">CSLightning</a> which is an innovative way to learn and develop skills in CS.</p>
-              <div style="display: inline-block; width: inherit; text-align: center;">
-              <iframe src="https://open.spotify.com/embed/user/inovaplayz/playlist/63i3HVMPdhFRxqnl02CDo5" width="300" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media" style="margin-left: inherit; margin-top: 10px;"></iframe>
-            </div>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="aboutSubTitle">Graphic Design</h3>
-                <p class="aboutPara">I create logos and Steam profile artwork using Adobe After Effects, Adobe Photoshop, and Adobe Illustrator. I have done so for approximately a year and am continuing to develop my knowledge of Illustrator and logo design.</p>
-                <p class="aboutPara">I have created steam profile artwork for a variety of clients. Examples of Steam profile artwork I have created is visible below. I make the artwork in approximately <b>1-2 days</b> depending on the requests of the client and the amount of other work I have.</p>
-                <h3 class="aboutSubTitle">Web Development</h3>
-                <p class="aboutPara">I am also a web developer. I primarily work with front-end web development and can create websites using HTML and CSS. Currently, I am working on learning JS and developing my knowledge of HTML and CSS.</p>
-                <p class="aboutPara">Skills Include:</p>
-                <ul>
-                  <li class="skillList">HTML</li>
-                  <li class="skillList">CSS</li>
-                  <li class="skillList">NodeJS</li>
-                </ul>
-            </div>
-
-            <!-- TODO: Fix div styling for my favorite songs and make sure fonts/colors match up and make sense -->
-
-
-        </div>
-
-        <!-- Portfolio -->
-
-        <div id="page3" class="row">
-            <div class="col-lg-12">
-                <h1 id="portfolio" class="titleAbout">Portfolio</h1>
-            </div>
-            <div class="container">
-                <div class="card-deck">
-                  <div class="card">
-                    <img class="card-img-top" src="./img/artwork_portfolio/galaxy.gif" alt="Galaxy Artwork">
-                    <div class="card-body">
-                      <h5 class="card-title">Galaxy</h5>
-                      <p class="card-text">This animation is geared towards profiles with space related backgrounds. It includes twinkling stars, shooting stars, and the client's brand or profile name.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="./img/artwork_portfolio/delirium.gif" alt="Simple Easy-Ease Artwork">
-                    <div class="card-body">
-                      <h5 class="card-title">Simple</h5>
-                      <p class="card-text">This is a simple design with easy-ease animations that can be customized to the client's will.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="./img/artwork_portfolio/tommy.gif" alt="Glitch Artwork">
-                    <div class="card-body">
-                      <h5 class="card-title">Glitch</h5>
-                      <p class="card-text">This is another simple animation which moves a clients brand or name across the background in a fast-paced manner. This can also be customized to the client's will.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Customization Section -->
-            <!--<div class="col-lg-12">
-                <h3 class="portfolioSubtitle">Artwork Customization</h3>
-            </div>
-            <div class="container">
-              <div class="fontCustom">
-                <form>
-                  <input id="fontInput" class="fontInput" type="text" placeholder="Your Text Here">
-                </form>
-              </div>
-            </div> -->
-            <!-- Testimonial -->
-            <!-- <div class="container-fluid">
-            </div>-->
-        </div>
-
-        <!-- Contact -->
-
-        <!-- <div id="page4" class="row">
-            <div class="col-lg-12">
-                <h1 id="contact" class="titleAbout">Contact Me</h1>
-            </div>
-            <div class="container">
-                <div class="col-lg-12">
-                    <form>
-                        <label for="input" class="label">Name:</label>
-                        <input class="nameInput" id="nameInput" placeholder="Your steam name"><br>
-
-                        <label for="input" class="label">Email:</label>
-                        <input class="emailInput" id="emailInput" placeholder="Your email"><br>
-
-                        <label for="messInput" class="label">Subject:</label>
-                        <input class="messInput" id="messInput" placeholder="Write me a message here...">
-
-                        <input type="submit" value="Submit" id="submit">
-                    </form>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Footer -->
-        <div class="row">
-          <footer class="footer">
-              <div class="container text-center">
-                  <p style="color: #fff;"><i>All background artworks are owned by their respective owners. I do not claim any ownership of fonts or background artworks used in any animations.</i></p>
-                  <p style="color: #fff; ">Made with ❤ by n2va</p>
-                  <a href="./steam"><i class="fab fa-steam"></i></a>
-                  <a href="./twitch"><i class="fab fa-twitch"></i></a>
-                  <a href="./youtube"><i class="fab fa-youtube"></i></a>
-              </div>
-          </footer>
-        </div>
-
-
-        </div> <!-- End of container for Boostrap -->
-        <!-- JS References -->
-        <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-        <script src="./JS/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-        <!-- Smooth transition script -->
+        <!-- jQuery script to control console text on nav hover -->
         <script>
-            $('a[href*="#"]')
-              // Remove links that don't actually link to anything
-              .not('[href="#"]')
-              .not('[href="#0"]')
-              .click(function(event) {
-                // On-page links
-                if (
-                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                  &&
-                  location.hostname == this.hostname
-                ) {
-                  // Figure out element to scroll to
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  // Does a scroll target exist?
-                  if (target.length) {
-                    // Only prevent default if animation is actually gonna happen
-                    event.preventDefault();
-                    $('html, body').animate({
-                      scrollTop: target.offset().top
-                    }, 1000, function() {
-                      // Callback after animation
-                      // Must change focus!
-                      var $target = $(target);
-                      $target.focus();
-                      if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                      } else {
-                        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                      };
-                    });
-                  }
-                }
-              });
+
         </script>
 
-        <script>
-            /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-            particlesJS.load('particles-js', './JS/particles.json', function() {
-              console.log('callback - particles.js config loaded');
-            });
-        </script>
+        <!-- TODO: remove this (unsure if needed) -->
+        <!--<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>-->
+
+        <!-- bootstrap JS reference -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha256-cMPWkL3FzjuaFSfEYESYmjF25hCIL6mfRSPnW8OVvM4=" crossorigin="anonymous"></script>
+
+        <!-- Load React. -->
+        <!-- TODO: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     </body>
 </html>
