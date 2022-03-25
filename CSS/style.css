@@ -8,9 +8,12 @@
 
 /* color swatches:
     Grey (Onyx): #35393C
+    Eerie Black: #151515
     Bone (White): #E7E1D2
     Max Blue Purple: #A594F9
     Medium Slate Blue: #7371FC
+    Light Sea Green: #2CA6A4
+    Light Coral: #F87575
 */
 
 /* animation definitions */
@@ -41,6 +44,7 @@
 html, body {
     background-color: #ECE4DC;
     height: 100%;
+    overflow: hidden;
 }
 
 .anim {
@@ -54,6 +58,7 @@ html, body {
     font-size: 54px;
     font-family: 'Heebo', sans-serif;
     /*border-bottom: 2px solid #A594F9;*/
+    text-shadow: 3px 2px #A594F9;
 }
 
 .navlist {
@@ -88,8 +93,9 @@ html, body {
 .console {
     width: 90%;
     height: 40vh;
-    background-color: #000;
-    border: 2px solid #7371FC;
+    background-color: #35393C;
+    border: 1px solid #F87575;
+    box-shadow: 4px 4px 7px 1px #242424;
 }
 
 .c-menu {
@@ -155,6 +161,102 @@ html, body {
     animation-name: blink;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+
+.win-gui {
+    position: absolute;
+    /*display: flex;*/
+    width: 60vw;
+    height: 70vh;
+    z-index: 999;
+    background-color: #fff;
+    top: 0;
+    margin-top: 50px;
+    border: 1px solid #2CA6A4;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px 1px #242424;
+    background-color: #A594F9;
+    overflow: auto;
+    resize: both;
+}
+
+.win-gui-menu {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.win-gui-menu > .c-win-title > #console-title {
+    margin-bottom: 0;
+}
+
+.win-gui-menu > .c-minimize > .dash {
+    width: 20%;
+}
+
+.win-gui-menu > .c-quit {
+    border-top-right-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.win-gui-menu > .c-quit > .exit-btn {
+    margin-bottom: 0;
+}
+
+.win-gui > .c-body {
+    overflow: visible;
+}
+
+.win-gui > .c-body > .c-body-text-container {
+    display: block;
+}
+
+.about-profile {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+}
+
+.profile-image {
+    width: 128px;
+    height: 128px;
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+.profile-header {
+    letter-spacing: 2px;
+    margin-top: 10px;
+    width: auto;
+    color: #151515;
+    font-family: 'Heebo', sans-serif;
+}
+
+.gui-body-text {
+    color: #000;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-g {
+    padding-right: 15px;
+    padding-left: 17px;
+}
+
+.about-g > ul > li {
+    color: #000;
+    font-size: 16px;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .footer > ul {
