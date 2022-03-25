@@ -226,6 +226,7 @@ html, body {
 
 .about-text {
     display: flex;
+    margin: 0;
 }
 
 .profile-image {

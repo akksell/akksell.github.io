@@ -172,7 +172,7 @@ function AboutFormat() {
             <div className="about-profile">
                 <h3 className="profile-header">ABOUT ME</h3>
             </div>
-            <div className="about-text justify-content-center align-items-start">
+            <div className="about-text row justify-content-center align-items-start">
 
                     <div className="col-sm-6 about-g">
                         <p className="gui-body-text">
