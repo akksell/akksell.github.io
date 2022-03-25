@@ -185,7 +185,7 @@ function AboutFormat() {
                             I am originally from Paris, France but moved to
                             Texas with my family when I was 3 and have lived
                             here ever since. To stay fit, I love to
-                            snowboard in the winter and windsuring in the
+                            snowboard in the winter and windsurf in the
                             summer. My favorite Football team is the
                             Dallas Cowboys.
                         </p>
