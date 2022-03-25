@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Axel Ramone - Welcome to my Portfolio</title>
+        <title>Axel Ramone - Developer Portfolio</title>
         <link rel="icon" type="image/png" href="./img/profile.png"> <!-- TODO: add icon -->
 
         <!-- bootstrap CSS reference -->
@@ -14,6 +14,8 @@
         <script src="https://kit.fontawesome.com/b2b606ab07.js" crossorigin="anonymous"></script>
         <!-- Jquery reference -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Babel reference (JSX - for ReactJS elements) -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
         <!-- local css references -->
         <link rel="stylesheet" href="./CSS/style.css">
@@ -44,9 +46,9 @@
                 <div class="col-md-6" style="text-align: center;">
                     <div class="navlist">
                         <ul>
-                            <li><a href="#" id="about-btn">About Me</a></li>
-                            <li><a href="#" id="exp-btn">Experience</a></li>
-                            <li><a href="#" id="proj-btn">Projects</a></li>
+                            <li><a href="#" class="about-btn">About Me</a></li>
+                            <li><a href="#" class="exp-btn">Experience</a></li>
+                            <li><a href="#" class="proj-btn">Projects</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,13 +71,16 @@
                         <!-- body of console -->
                         <div class="c-body">
                             <div class="c-body-text-container">
-                                <p class="c-body-text" id="console-text">C:\Users\Default\Portfolio\</p>
-                                <div class="blinker align-self-end"></div>
+                                <p class="c-body-text">C:\Users\Default\Portfolio\><span class="added-text"></span></p>
+                                <span class="blinker align-self-end"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- TODO: add text for experience and projects -->
+            <div class="react-root"></div>
 
             <!-- footer -->
             <div class="row w-100 h-25 align-items-end">
@@ -93,6 +98,29 @@
 
         <!-- jQuery script to control console text on nav hover -->
         <script>
+            $("a.about-btn").hover(
+                function() {
+                    $(".added-text").append("open 'About Me.md'");
+                }, function() {
+                    $(".added-text").text($(".added-text").text().replace($(".added-text").text()," "));
+                }
+            );
+
+            $("a.exp-btn").hover(
+                function() {
+                    $(".added-text").append("open Experience.pdf");
+                }, function() {
+                    $(".added-text").text($(".added-text").text().replace($(".added-text").text()," "));
+                }
+            );
+
+            $("a.proj-btn").hover(
+                function() {
+                    $(".added-text").append("open Projects.cpp");
+                }, function() {
+                    $(".added-text").text($(".added-text").text().replace($(".added-text").text()," "));
+                }
+            );
 
         </script>
 
@@ -106,5 +134,8 @@
         <!-- TODO: when deploying, replace "development.js" with "production.min.js". -->
         <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- React script that renders GUI windows on nav clicks -->
+        <script type="text/babel" src="./JS/gui.js"></script>
     </body>
 </html>
