@@ -181,13 +181,15 @@ html, body {
 }
 
 .win-gui-menu {
-    height: 7%;
-    width: 100%;
+    height: 5%;
+    /*width: 100%;*/
+    width: inherit;
     display: flex;
     border-bottom: 1px solid #000;
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    position: fixed;
 }
 
 .win-gui-menu > .c-win-title > #console-title {
@@ -210,6 +212,8 @@ html, body {
 
 .win-gui > .c-body {
     overflow: visible;
+    margin-top: auto;
+    padding-top: 50px;
 }
 
 .win-gui > .c-body > .c-body-text-container {
@@ -227,6 +231,7 @@ html, body {
 .about-text {
     display: flex;
     margin: 0;
+    margin-top: 30px;
 }
 
 .profile-image {

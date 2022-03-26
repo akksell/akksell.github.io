@@ -169,20 +169,18 @@ function AboutFormat() {
             <div className="about-profile">
                 <img className="profile-image" src="https://pbs.twimg.com/profile_images/1210650599374622723/VIE3DEhx_400x400.jpg" />
             </div>
-            <div className="about-profile">
-                <h3 className="profile-header">ABOUT ME</h3>
-            </div>
+
             <div className="about-text row justify-content-center align-items-start">
 
                     <div className="col-sm-6 about-g">
                         <p className="gui-body-text">
                             Thanks for visiting my portfolio! My name is Axel
-                            and I am currently a sophomore studying for a
+                            and I'm a 20 year old sophomore studying for a
                             BS in Computer Science at Texas A&M University at
                             College Station.
                         </p>
                         <p className="gui-body-text">
-                            I am originally from Paris, France but moved to
+                            I'm originally from Paris, France but moved to
                             Texas with my family when I was 3 and have lived
                             here ever since. To stay fit, I love to
                             snowboard in the winter and windsurf in the
@@ -200,6 +198,12 @@ function AboutFormat() {
                             <li>Playing video games (I'm a huge fan of FPS games)</li>
                             <li>Hanging out with friends and family</li>
                         </ul>
+                        <p className="gui-body-text">
+                            Sometimes I post about my current projects
+                            on my <a href="https://twitter.com/atramone">twitter</a>. If you want to contact me
+                            about a project, you can DM me there or on discord:
+                            vain#1995.
+                        </p>
                     </div>
             </div>
         </div>
